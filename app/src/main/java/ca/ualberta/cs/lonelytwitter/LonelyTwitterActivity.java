@@ -18,6 +18,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import static java.lang.System.currentTimeMillis;
+
 public class LonelyTwitterActivity extends Activity {
 
 	private static final String FILENAME = "file.sav";
@@ -39,8 +41,8 @@ public class LonelyTwitterActivity extends Activity {
 			public void onClick(View v) {
 				setResult(RESULT_OK);
 				String text = bodyText.getText().toString();
-				saveInFile(text, new Date(System.currentTimeMillis()));
-				finish();
+				currentTimeMillis();
+				//finish();
 
 			}
 		});
