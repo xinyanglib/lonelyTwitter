@@ -6,9 +6,9 @@ import java.util.Date;
  * Created by xinyang4 on 9/19/18.
  */
 
-public class ImportantTweest extends Tweest
+public class ImportantTweet extends Tweest
 {
-    public ImportantTweest(String message)
+    public ImportantTweet(String message)
     {
         super(message);
     }

@@ -13,6 +13,8 @@ public abstract class Tweest {
     public Tweest(String message)
     {
         this.message = message;
+        this.date = new Date();
+
     }
     public Tweest(String message, Date date){
         this.message = message;
@@ -40,4 +42,9 @@ public abstract class Tweest {
     }
 
     public abstract boolean isImportant();
+
+    public String toString()
+    {
+        return date.toString() + " | " + message;
+    }
 }
