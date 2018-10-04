@@ -13,6 +13,9 @@ import java.util.List;
  * Created by apple on 2018/9/26.
  */
 
+/**
+ * it is get the information to store it in the array.
+ */
 public class TweetAdapter extends ArrayAdapter
 {
     final public int resourceId;

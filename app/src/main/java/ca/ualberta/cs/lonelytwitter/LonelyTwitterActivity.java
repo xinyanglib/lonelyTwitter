@@ -1,3 +1,6 @@
+/**
+ * LonelyTwitterActivity class, to provide the UI of the application.
+ */
 package ca.ualberta.cs.lonelytwitter;
 
 import java.io.BufferedReader;
@@ -68,6 +71,10 @@ public class LonelyTwitterActivity extends Activity {
 
 	}
 
+	/**
+	* load the file and to check of the file is that possible to use.
+	 */
+
 	private void loadFromFile() {
 		//ArrayList<String> tweets = new ArrayList<String>();
 		try {
@@ -88,7 +95,9 @@ public class LonelyTwitterActivity extends Activity {
 		}
 		//return tweets.toArray(new String[tweets.size()]);
 	}
-	
+	/**
+	 * save the information in the file.
+	 */
 	private void saveInFile() {
 		try {
 			FileOutputStream fos = openFileOutput(FILENAME, Context.MODE_PRIVATE);

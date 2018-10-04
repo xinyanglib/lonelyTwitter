@@ -8,8 +8,14 @@ import java.util.Date;
  */
 
 public abstract class Tweest {
-    protected String message;
-    protected Date date;
+    protected String message;  // to set up the message as string
+    protected Date date;    // to set up date
+
+    /**
+     * to build class in the tweest to add the data in array
+     * to build the date like set up the new date.
+     * to build set message is set the comment.
+     */
     public Tweest(String message)
     {
         this.message = message;
